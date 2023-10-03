@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #efc9af;
+}
+
+.container {
+    background-color: #104c91;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    width: 306px;
+    height: 306px;
+    margin: auto;
+    border: 4px solid #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color: #1a42e2; /* Blue shade */
+}
+
+.cell {                        
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    background-color: #29b8ec;
+}
+
+.cell:hover {
+    background-color: #ca7e27;
+}
+
+.winner {
+    background-color: #FF5733;
+}
+
+.message {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #000000;
+}
+
+#resetButton {
+    background-color: #29b8ec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#resetButton:hover {
+    background-color: #ca7e27;
+}
